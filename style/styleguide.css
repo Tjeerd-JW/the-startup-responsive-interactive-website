@@ -77,12 +77,9 @@ html {
         font-style: italic;
     }
 
-    font-family: 'Lato',
-    sans-serif;
-
     /* heading */
     h1 {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-weight: 500;
         font-size: 72px;
         line-height: 86px;
@@ -90,7 +87,7 @@ html {
     }
 
     h2 {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-weight: 500;
         font-size: 60px;
         line-height: 72px;
@@ -98,7 +95,7 @@ html {
     }
 
     h3 {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-weight: 500;
         font-size: 48px;
         line-height: 56px;
@@ -106,7 +103,7 @@ html {
     }
 
     h4 {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-weight: 500;
         font-size: 36px;
         line-height: 43px;
@@ -114,7 +111,7 @@ html {
     }
 
     h5 {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;
@@ -122,7 +119,7 @@ html {
     }
 
     h6 {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-weight: 500;
         font-size: 18px;
         line-height: 28px;
@@ -130,7 +127,7 @@ html {
     }
 
     p {
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-weight: 300;
         font-size: 18px;
         line-height: 30px;
