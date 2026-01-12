@@ -13,6 +13,8 @@ main {
     background-color: var(--grey-lightest);
     min-width: 320px;
     max-width: 1440px;
+    gap: 0 1rem;
+    padding: 0 1rem;
 
     /* @media (min-width: 660px) {
         grid-template-columns: repeat(12, 1fr);
@@ -41,6 +43,10 @@ main {
     background-color: var(--grey-neutral);
     grid-column: 1 / -1;
     display: grid;
+
+    ol {
+        list-style: none;
+    }
 
     /* @media (min-width: 660px) {
         grid-column: 1 / 7;
@@ -119,22 +125,23 @@ main {
     display: none;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 100px;
+    padding-top: 10vh;
     z-index: 10;
     top: 0;
     left: 0;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
     article {
         background-color: var(--grey-lightest);
         margin: auto;
-        width: clamp(320px, 100vw, 1200px);
+        width: clamp(320px, 75vw, 1200px);
 
         img {
             object-fit: cover;
             aspect-ratio: 67 / 26;
             width: 100%;
-
+            height: clamp(50px, 100%, 580px);
         }
     }
 }
