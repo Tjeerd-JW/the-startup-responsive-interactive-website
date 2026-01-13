@@ -12,6 +12,20 @@ html {
     --grey-light: hsla(0, 0%, 91%, 1);
     --grey-lightest: hsla(0, 0%, 96%, 1);
 
+
+    /* spacing */
+    --spacing-small-vertical: .5rem 0;
+    --spacing-medium-vertical: 1rem 0;
+    --spacing-large-vertical: 1.5rem 0;
+
+    --spacing-small-horizontal: 0 .5rem;
+    --spacing-medium-horizontal: 0 1rem;
+    --spacing-large-horizontal: 0 1.5rem;
+
+    --spacing-small: .5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 1.5rem;
+
     /* typeface */
     /* Regular */
     @font-face {

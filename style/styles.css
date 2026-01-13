@@ -30,7 +30,7 @@ main {
     color: var(--grey-lightest);
 
     .description-content {
-        padding: 0 1rem;
+        padding: var(--spacing-medium-horizontal);
 
         h1 {
             font-size: 36px;
@@ -51,14 +51,14 @@ main {
     display: grid;
 
     .forecast-content {
-        padding: 0 1rem;
+        padding: var(--spacing-medium-horizontal);
 
         table {
             width: 100%;
 
             tbody {
                 display: grid;
-                gap: .5rem 0;
+                padding: var(--spacing-small-vertical);
 
                 tr {
                     display: inherit;
@@ -89,6 +89,44 @@ main {
             }
         }
 
+        form {
+            padding: var(--spacing-small-vertical);
+
+            fieldset {
+                border: none;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                legend {
+                    padding: var(--spacing-small-vertical);
+                }
+
+                label {
+                    gap: 10px;
+
+                    input {
+                        width: 100%;
+                        padding: 16px 20px;
+                        border-radius: 999px;
+                        border: 1px solid var(--black);
+                        color: var(--black);
+                        &::placeholder{
+                            color: var(--black);
+                            text-align: center;
+                        }
+                    }
+                }
+
+                button {
+                    padding: 16px 20px;
+                    border-radius: 999px;
+                    border: none;
+                    background-color: var(--black);
+                    color: var(--grey-lightest);
+                }
+            }
+        }
     }
 
 
@@ -108,7 +146,7 @@ main {
     } */
 
     .activities-content {
-        padding: 0 1rem;
+        padding: var(--spacing-medium-horizontal);
 
         article {
             display: grid;
