@@ -233,11 +233,12 @@ main {
     left: 0;
     width: 100vw;
     height: 100vh;
-
+transition: ease-in-out .2s;
     article {
         background-color: var(--grey-lightest);
         margin: auto;
         width: clamp(320px, 75vw, 1200px);
+        animation: modal-animation .5s;
 
         img {
             object-fit: cover;
@@ -250,6 +251,37 @@ main {
 
 .modal.modal-show {
     display: block;
+
+    article {
+        animation: modal-animation .5s forwards;
+    }
+}
+
+.modal.modal-not-show {
+    display: block;
+    background-color: transparent;
+    transition: ease-in-out .2s;
+
+    article {
+        animation: modal-not-show-animation .5s forwards;
+    }
+}
+
+@keyframes modal-not-show-animation {
+
+    100% {
+        transform: translatey(200vw);
+    }
+}
+
+@keyframes modal-animation {
+    0% {
+        transform: translatey(100vw);
+    }
+
+    100% {
+        transform: translaty(-100vw);
+    }
 }
 
 body:has(.modal-show) {
@@ -260,5 +292,4 @@ footer {
     background-color: var(--black);
     grid-column: 1 / -1;
 
-    /* width: 100vw; */
 }

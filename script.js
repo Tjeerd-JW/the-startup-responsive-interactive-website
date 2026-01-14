@@ -14,4 +14,8 @@ closeButton.addEventListener("click", closeModal)
 function closeModal() {
     console.log('sluiten')
     modal.classList.remove('modal-show')
+    modal.classList.add('modal-not-show')
 }
+modal.addEventListener("animationend",() =>{
+    modal.classList.remove('modal-not-show')
+})
