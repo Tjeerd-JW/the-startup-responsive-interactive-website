@@ -303,11 +303,12 @@ main {
         width: clamp(320px, 75vw, 1200px);
         animation: modal-animation .5s;
         overflow-y: scroll;
-        height: 90vh;
 
         @media (min-width:660px) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             max-width: 50%;
+            height:clamp(500px, 90vh, 950px) ;
+
         }
 
         button:first-child {
