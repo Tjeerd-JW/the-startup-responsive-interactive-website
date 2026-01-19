@@ -307,7 +307,7 @@ main {
         @media (min-width:660px) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             max-width: 50%;
-            height:clamp(500px, 90vh, 950px) ;
+            height: clamp(500px, 90vh, 950px);
 
         }
 
@@ -445,5 +445,20 @@ body:has(.modal-show) {
 footer {
     background-color: var(--black);
     grid-column: 1 / -1;
+    height: 50rem;
+    display: flex;
 
+    p {
+        margin: auto;
+        font-weight: bold;
+            color: var(--grey-lightest);
+
+        span:first-child {
+        }
+
+        span:last-child {
+            color: #66E5BF;
+
+        }
+    }
 }
