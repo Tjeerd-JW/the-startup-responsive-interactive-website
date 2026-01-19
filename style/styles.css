@@ -30,12 +30,21 @@ main {
     grid-column: 1 / -1;
     color: var(--grey-lightest);
     display: flex;
-    justify-content: end;
+
+    @media (min-width: 900px) {
+        grid-column: 1 / 7;
+        justify-content: end;
+    }
 
     .description-content {
         padding: var(--spacing-medium-horizontal);
         height: 100%;
         max-width: 700px;
+        margin: auto;
+
+        @media (min-width: 900px) {
+            margin: unset;
+        }
 
         h1 {
             font-size: 36px;
@@ -46,16 +55,18 @@ main {
         }
     }
 
-    @media (min-width: 900px) {
-        grid-column: 1 / 7;
-    }
+
 }
 
 .forecast {
     /* background-color: var(--grey-neutral); */
     grid-column: 1 / -1;
     display: flex;
-    justify-content: end;
+
+    @media (min-width: 900px) {
+        grid-column: 1 / 7;
+        justify-content: end;
+    }
 
     h2 {
         font-size: 35px;
@@ -65,6 +76,11 @@ main {
     .forecast-content {
         padding: var(--spacing-medium-horizontal);
         width: clamp(300px, 100%, 700px);
+        margin: auto;
+
+        @media (min-width: 900px) {
+            margin: unset;
+        }
 
         table {
             width: 100%;
@@ -105,8 +121,6 @@ main {
         form {
             padding: var(--spacing-small-vertical);
 
-
-
             fieldset {
                 border: none;
                 display: grid;
@@ -115,7 +129,6 @@ main {
                 @media (min-width: 900px) {
                     grid-template-columns: 1fr 1fr;
                     max-width: 450px;
-
                 }
 
                 legend {
@@ -160,9 +173,7 @@ main {
         }
     }
 
-    @media (min-width: 900px) {
-        grid-column: 1 / 7;
-    }
+
 
 }
 
@@ -175,11 +186,17 @@ main {
     @media (min-width: 900px) {
         grid-column: 8 / 13;
         grid-row: 1 / 3;
+        justify-content: start;
     }
 
     .activities-content {
         padding: var(--spacing-medium-horizontal);
         max-width: 700px;
+        margin: auto;
+
+        @media (min-width: 900px) {
+            margin: unset;
+        }
 
         .current-temp {
             display: grid;
@@ -289,8 +306,6 @@ main {
 
 
         }
-
-
     }
 }
 
