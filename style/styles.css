@@ -16,7 +16,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: var(--grey-lightest);
     min-width: 320px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     gap: 0 1rem;
 
     @media (min-width: 900px) {
@@ -29,10 +29,13 @@ main {
     background-color: var(--purple);
     grid-column: 1 / -1;
     color: var(--grey-lightest);
+    display: flex;
+    justify-content: end;
 
     .description-content {
         padding: var(--spacing-medium-horizontal);
         height: 100%;
+        max-width: 700px;
 
         h1 {
             font-size: 36px;
@@ -51,7 +54,8 @@ main {
 .forecast {
     /* background-color: var(--grey-neutral); */
     grid-column: 1 / -1;
-    display: grid;
+    display: flex;
+    justify-content: end;
 
     h2 {
         font-size: 35px;
@@ -60,6 +64,7 @@ main {
 
     .forecast-content {
         padding: var(--spacing-medium-horizontal);
+        width: clamp(300px, 100%, 700px);
 
         table {
             width: 100%;
@@ -164,6 +169,8 @@ main {
 .activities {
     background-color: var(--grey-lightest);
     grid-column: 1 / -1;
+    display: flex;
+    justify-content: start;
 
     @media (min-width: 900px) {
         grid-column: 8 / 13;
@@ -172,6 +179,7 @@ main {
 
     .activities-content {
         padding: var(--spacing-medium-horizontal);
+        max-width: 700px;
 
         .current-temp {
             display: grid;
@@ -472,7 +480,7 @@ body:has(.modal-show) {
 footer {
     background-color: var(--black);
     grid-column: 1 / -1;
-    height: 50rem;
+    height: 60rem;
     display: flex;
 
     p {
