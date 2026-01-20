@@ -152,12 +152,19 @@ main {
                         width: 100%;
                         padding: 16px 20px;
                         border-radius: 999px;
-                        border: 1px solid var(--primary-background);
+                        border: 3px solid var(--primary-background);
                         color: var(--primary-text);
+                        transition: ease .2s;
 
                         &::placeholder {
                             color: var(--primary-text);
                             text-align: center;
+                        }
+
+                        &:focus{
+                            outline: 2px solid var(--primary-background);
+                            outline-offset: -7px;
+                            scale: 1.05;
                         }
 
                         @media (min-width: 900x) {
@@ -202,6 +209,17 @@ main {
                         transform: scale(1.05);
                         box-shadow: 0 0 5px var(--primary-color);
 
+                        &::before {
+                            opacity: 1;
+                            transform: rotate(-45deg) translateY(100%);
+                        }
+                    }
+
+                    &:focus {
+                        transform: scale(1.05);
+                        box-shadow: 0 0 5px var(--primary-color);
+                        outline: 1px solid ;
+                        outline-offset: -5px;
                         &::before {
                             opacity: 1;
                             transform: rotate(-45deg) translateY(100%);
