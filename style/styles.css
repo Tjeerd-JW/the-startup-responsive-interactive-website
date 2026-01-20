@@ -8,13 +8,13 @@
 }
 
 body {
-    background-color: var(--grey-lightest);
+    background-color: var(--shade-lightest);
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: var(--grey-lightest);
+    background-color: var(--shade-lightest);
     min-width: 320px;
     /* max-width: 1440px; */
     gap: 0 1rem;
@@ -26,9 +26,9 @@ main {
 }
 
 .description {
-    background-color: var(--purple);
+    background-color: var( --primary-color);
     grid-column: 1 / -1;
-    color: var(--grey-lightest);
+    color: var(--shade-lightest);
     display: flex;
 
     @media (min-width: 900px) {
@@ -59,7 +59,7 @@ main {
 }
 
 .forecast {
-    /* background-color: var(--grey-neutral); */
+    /* background-color: var(--shade-neutral); */
     grid-column: 1 / -1;
     display: flex;
 
@@ -143,11 +143,11 @@ main {
                         width: 100%;
                         padding: 16px 20px;
                         border-radius: 999px;
-                        border: 1px solid var(--black);
-                        color: var(--black);
+                        border: 1px solid var( --primary-background);
+                        color: var(--primary-text);
 
                         &::placeholder {
-                            color: var(--black);
+                            color: var(--primary-text);
                             text-align: center;
                         }
 
@@ -161,8 +161,8 @@ main {
                     padding: 16px 20px;
                     border-radius: 999px;
                     border: none;
-                    background-color: var(--black);
-                    color: var(--grey-lightest);
+                    background-color: var(--primary-background);
+                    color: var(--shade-lightest);
                     cursor: pointer;
                     transition: .5s ease;
                     overflow: hidden;
@@ -182,7 +182,7 @@ main {
                         background: linear-gradient(0deg,
                                 transparent,
                                 transparent 30%,
-                                var(--purple));
+                                var( --primary-color));
                         transform: rotate(-45deg);
                         transition: 1s ease;
                         opacity: 0;
@@ -191,7 +191,7 @@ main {
 
                     &:hover {
                         transform: scale(1.05);
-                        box-shadow: 0 0 5px var(--purple);
+                        box-shadow: 0 0 5px var( --primary-color);
 
                         &::before {
                             opacity: 1;
@@ -203,7 +203,7 @@ main {
 
                 .mail-submit {
                     animation: mail-submit-animation 1s;
-                    box-shadow: 50px var(--purple);
+                    box-shadow: 50px var( --primary-color);
 
                     &::before {
                         background: transparent;
@@ -218,7 +218,7 @@ main {
 }
 
 .activities {
-    background-color: var(--grey-lightest);
+    background-color: var(--shade-lightest);
     grid-column: 1 / -1;
     display: flex;
     justify-content: start;
@@ -241,7 +241,7 @@ main {
         .current-temp {
             display: grid;
             grid-template-columns: 1fr;
-            background-color: var(--grey-light);
+            background-color: var(--shade-light);
             padding: var(--spacing-large);
 
             @media (min-width: 900px) {
@@ -301,7 +301,7 @@ main {
                 transition: ease-in-out .3s;
 
                 &:hover {
-                    background-color: var(--grey-light);
+                    background-color: var(--shade-light);
 
                 }
 
@@ -366,7 +366,7 @@ main {
     article {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: var(--grey-lightest);
+        background-color: var(--shade-lightest);
         margin: auto;
         width: clamp(320px, 75vw, 1200px);
         animation: modal-animation .5s;
@@ -432,7 +432,7 @@ main {
             margin: var(--spacing-small-horizontal);
             height: fit-content;
             grid-column: 1 / -1;
-            background-color: var(--grey-light);
+            background-color: var(--shade-light);
             width: min-content;
             text-wrap: nowrap;
 
@@ -476,8 +476,8 @@ main {
             padding: 10px 30px;
             border-radius: 999px;
             border: none;
-            background-color: var(--black);
-            color: var(--grey-lightest);
+            background-color: var( --primary-background);
+            color: var(--shade-lightest);
             cursor: pointer;
             width: min-content;
             text-wrap: nowrap;
@@ -490,8 +490,8 @@ main {
             }
 
             &:hover {
-                background-color: var(--grey-dark);
-                color: var(--black);
+                background-color: var(--shade-dark);
+                color: var(--primary-text);
                 scale: 1.1;
             }
 
@@ -538,7 +538,7 @@ main {
 @keyframes mail-submit-animation {
     0% {
         transform: scale(1.05);
-        background-color: var(--purple);
+        background-color: var( --primary-color);
 
     }
 
@@ -548,7 +548,7 @@ main {
 
     50% {
         transform: scale(1.15);
-        background-color: var(--purple);
+        background-color: var( --primary-color);
 
     }
 
@@ -562,7 +562,7 @@ body:has(.modal-show) {
 }
 
 footer {
-    background-color: var(--black);
+    background-color: var( --primary-background);
     grid-column: 1 / -1;
     height: 60rem;
     display: flex;
@@ -570,7 +570,7 @@ footer {
     p {
         margin: auto;
         font-weight: bold;
-        color: var(--grey-lightest);
+        color: var(--shade-lightest);
 
         span:first-child {}
 

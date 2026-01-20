@@ -2,16 +2,18 @@
 html {
     /* colors */
     /* primary */
-    --black: hsla(0, 0%, 0%, 1);
-    --rose: hsla(256, 90%, 96%, 1);
-    --purple: hsla(256, 93%, 53%, 1);
-    /* grey */
-    --grey-darkest: hsla(0, 0%, 62%, 1);
-    --grey-dark: hsla(0, 0%, 77%, 1);
-    --grey-neutral: hsla(0, 0%, 85%, 1);
-    --grey-light: hsla(0, 0%, 91%, 1);
-    --grey-lightest: hsla(0, 0%, 96%, 1);
+    --primary-color: hsla(256, 93%, 53%, 1);
+    /* shade */
+    --shade-darkest: hsla(0, 0%, 62%, 1);
+    --shade-dark: hsla(0, 0%, 77%, 1);
+    --shade-neutral: hsla(0, 0%, 85%, 1);
+    --shade-light: hsla(0, 0%, 91%, 1);
+    --shade-lightest: hsla(0, 0%, 96%, 1);
+    /* tekst */
+    --primary-text: hsla(0, 0%, 0%, 1);
 
+    /* background */
+    --primary-background: hsla(0, 0%, 0%, 1);
 
     /* spacing */
     --spacing-small-vertical: .5rem 0;
