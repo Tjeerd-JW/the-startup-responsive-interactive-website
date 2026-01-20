@@ -166,45 +166,55 @@ main {
                     cursor: pointer;
                     transition: .5s ease;
                     overflow: hidden;
-position: relative;
+                    position: relative;
+
                     @media (min-width: 900px) {
                         width: min-content;
                     }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: -50%;
+                        left: -50%;
+                        width: 200%;
+                        height: 200%;
+                        background: linear-gradient(0deg,
+                                transparent,
+                                transparent 30%,
+                                var(--purple));
+                        transform: rotate(-45deg);
+                        transition: 1s ease;
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+
+                    &:hover {
+                        transform: scale(1.05);
+                        box-shadow: 0 0 5px var(--purple);
+
+                        &::before {
+                            opacity: 1;
+                            transform: rotate(-45deg) translateY(100%);
+                        }
+                    }
+
                 }
 
-                button::before {
-                    content: '';
-                    position: absolute;
-                    top: -50%;
-                    left: -50%;
-                    width: 200%;
-                    height: 200%;
-                    background: linear-gradient(0deg,
-                            transparent,
-                            transparent 30%,
-                            var(--purple));
-                    transform: rotate(-45deg);
-                    transition: 1s ease;
-                    opacity: 0;
-                    pointer-events: none;
+                .mail-submit {
+                    animation: mail-submit-animation 1s;
+                    box-shadow: 50px var(--purple);
+
+                    &::before {
+                        background: transparent;
+                    }
 
                 }
 
-                button:hover {
-                    transform: scale(1.05);
-                    box-shadow: 0 0 5px var(--purple);
-                }
 
-                button:hover::before {
-                    opacity: 1;
-                    transform: rotate(-45deg) translateY(100%);
-                }
             }
         }
     }
-
-
-
 }
 
 .activities {
@@ -522,6 +532,28 @@ position: relative;
 
     100% {
         transform: translaty(-100vw);
+    }
+}
+
+@keyframes mail-submit-animation {
+    0% {
+        transform: scale(1.05);
+        background-color: var(--purple);
+
+    }
+
+    10% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+        background-color: var(--purple);
+
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 
