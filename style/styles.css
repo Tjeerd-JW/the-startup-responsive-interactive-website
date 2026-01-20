@@ -161,7 +161,7 @@ main {
                             text-align: center;
                         }
 
-                        &:focus{
+                        &:focus {
                             outline: 2px solid var(--primary-background);
                             outline-offset: -7px;
                             scale: 1.05;
@@ -218,8 +218,9 @@ main {
                     &:focus {
                         transform: scale(1.05);
                         box-shadow: 0 0 5px var(--primary-color);
-                        outline: 1px solid ;
+                        outline: 1px solid;
                         outline-offset: -5px;
+
                         &::before {
                             opacity: 1;
                             transform: rotate(-45deg) translateY(100%);
@@ -329,7 +330,12 @@ main {
 
                 &:hover {
                     background-color: var(--shade-light);
+                }
 
+                &:focus {
+                    background-color: var(--shade-light);
+                    outline: 3px solid var(--primary-background);
+                    scale: 1.05;
                 }
 
                 @media (min-width: 660px) {
