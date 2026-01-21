@@ -38,6 +38,9 @@ Deze website scoort zelfs een 100 op de lighthouse test!!
 
 <img width="1170" height="388" alt="afbeelding" src="https://github.com/user-attachments/assets/d5ff4a88-d1c5-4850-9173-08a1d545fdab" />
 
+### Huisstijl
+
+De website maakt gerbruik van custom variables zodat de kleuren en spacing op de pagina consisitent zijn. Al deze styling staat in een aparte stylesheet zodat het niet zomaar verandert kan worden. De kleuren worden maken gebruik van HSLA zodat ze er extra mooi uitzien.
 
 ### Animaties
 
