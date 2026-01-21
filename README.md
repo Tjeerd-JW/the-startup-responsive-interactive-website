@@ -35,14 +35,18 @@ Hier kan je zien hoe de website eruitziet op een desktop.
 
 De HTML is zo opgebouwd dat iedereen het kan gebruiken ongeacht de situatie.
 
-### CSS
+### Animaties
 
-Met het opbouwen van de CSS heb ik volledig gebruik gemaakt van nesting.
+Met CSS en JS zijn gebruikt om animaties te maken op de website.
 
+Mail signup
 
-### JS
+![mail-button2026-01-21103435](https://github.com/user-attachments/assets/d1535e60-2360-4d18-8c22-ba2a51e4b337)
 
-JavaScript is gebruikt om animaties op de pagina te zetten zoals de modal aan en uit animatie en de mail signup knop.
+Modal met informatie
+
+![modal2026-01-21103851](https://github.com/user-attachments/assets/21085125-0965-4096-9add-5046beee97fc)
+
 
 
 ## Bronnen
