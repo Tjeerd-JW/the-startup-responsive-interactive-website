@@ -33,7 +33,10 @@ Hier kan je zien hoe de website eruitziet op een desktop.
 
 ### HTML
 
-De HTML is zo opgebouwd dat iedereen het kan gebruiken ongeacht de situatie.
+De HTML is zo opgebouwd dat iedereen het kan gebruiken ongeacht de situatie. Deze website scoort zelfs een 100 op de lighthouse test!!
+
+<img width="1170" height="388" alt="afbeelding" src="https://github.com/user-attachments/assets/d5ff4a88-d1c5-4850-9173-08a1d545fdab" />
+
 
 ### Animaties
 
