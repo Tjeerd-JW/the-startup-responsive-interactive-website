@@ -11,13 +11,18 @@ Met de Dept weatherplanner kun je het huidige weer checken en activiteiten bekij
 Deze weatherplanner heeft alles wat je wil. Huidige weer, weer van de komende dagen, je inschrijven voor de mail over het weer, activiteiten die je kunt doen met het huidige weer en wat je juist niet moet doen! 
 Door simpel te klikken op de activiteiten kan je meer informatie er over vinden zodat je je nooit meer hoeft te vervelen.
 
+Wil je zelf ervaren wat het weer is zonder naar buiten te gaan? Vrees niet [hier](https://tjeerd-jw.github.io/the-startup-responsive-interactive-website/) kan je hem nu gebruiken!!
+
+## Mobile
+
 Hier kan je zien hoe de website er op mobiel uitziet.
-<img width="1554" height="3199" alt="tjeerd-jw github io_the-startup-responsive-interactive-website_(Nexus 6P)" src="https://github.com/user-attachments/assets/2ced04ce-4e15-44e1-888e-ad288bd61fc6" />
+
+<img width="500px" height="1000px" alt="tjeerd-jw github io_the-startup-responsive-interactive-website_(Nexus 6P)" src="https://github.com/user-attachments/assets/2ced04ce-4e15-44e1-888e-ad288bd61fc6" />
+
+## Desktop
 
 Hier kan je zien hoe de website eruitziet op een desktop.
 <img width="1066" height="714" alt="afbeelding" src="https://github.com/user-attachments/assets/997734c6-7454-4ba8-b646-77e4334a7e56" />
-
-Wil je zelf ervaren wat het weer is zonder naar buiten te gaan? Vrees niet [hier](https://tjeerd-jw.github.io/the-startup-responsive-interactive-website/) kan je hem nu gebruiken!!
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
@@ -28,11 +33,16 @@ Wil je zelf ervaren wat het weer is zonder naar buiten te gaan? Vrees niet [hier
 
 ### HTML
 
+De HTML is zo opgebouwd dat iedereen het kan gebruiken ongeacht de situatie.
+
 ### CSS
+
+Met het opbouwen van de CSS heb ik volledig gebruik gemaakt van nesting.
+
 
 ### JS
 
-
+JavaScript is gebruikt om animaties op de pagina te zetten zoals de modal aan en uit animatie en de mail signup knop.
 
 
 ## Bronnen
